@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Survey Form</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+        
+        label {
+          padding: 12px 12px 12px 0;
+          display: inline-block;
+        }
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          float: right;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 50px;
+        }
+        
+        .col-25 {
+          float: left;
+          width: 25%;
+          margin-top: 6px;
+        }
+        
+        .col-75 {
+          float: left;
+          width: 75%;
+          margin-top: 6px;
+        }
+        
+        /* Clear floats after the columns */
+        .row::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+        </style>
+</head>
+
+<body style="background-color:#0ea5e9; padding-left: 300px; padding-right:300px;">
+    <h1 style="padding-left: 330px; color:white;">Customer Survey Form</h1>
+    <div class="container">
+        <form action="/action_page.php">
+        <div style="display:inline-flex;">
+            <div style="padding-left:100px;">
+            <div>
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Name..">
+            </div>
+            </div>
+           <div style="padding-left:20px;">
+           <div>
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Email..">
+           </div>
+           </div>
+        </div>
+        <div style="padding-left:100px;">
+            <p>Is this first time You are using our products & service?</p>
+            <div style="display: flex;">
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">Yes</label><br>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">No</label><br>
+            </div>
+        </div>
+        <div style="padding-left:100px;">
+            <p>Would you suggestion to your friends and colleague?:</p>
+            <div style="display: flex;">
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">Yes</label><br>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">No</label><br>
+            </div>
+        </div>
+        <div style="padding-left:100px;">
+            <p>How satisfied are you with our company overall?</p>
+            <div style="display: flex;">
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">Satisfied </label><br>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">Undecided</label><br>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">Unsatisfied</label><br>
+            </div>
+        </div>
+        <div class="row" style="padding-left:100px;">
+            <div>
+              <label for="subject">Do you have suggestion to improve our service?</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea>
+            </div>
+          </div>
+          <div style="padding-right:570px;padding-top:4px;">
+            <input type="submit" value="SUBMIT" style="width:110px;background-color:#0ea5e9;">
+          </div>
+        </div>
+        </form>
+      </div>
+      <h3 style="color: white; padding-left:140px;">©2018 Customer Survey Form. All Rights Reserved Design by W3Layouts</h3>
+</body>
+
+</html>
